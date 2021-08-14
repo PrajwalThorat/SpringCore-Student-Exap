@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<!-- first bean using p schema -->
+	<bean class = "org.stackroute.domain.StudentDetails.Student" name = "student1" p:studentId="123" p:studentName="iron-man" p:city="New-York" />
+	<!-- sec student details -->
+	<bean class = "org.stackroute.domain.StudentDetails.Student" name = "student2" p:studentId="456" p:studentName="Super-man" p:city="Los-Angeles" />
+	
+
+</beans>
